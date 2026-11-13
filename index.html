@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os principais componentes de um computador e entenda para que serve cada peça.">
+  <title>Peças de Computador | Guia Básico</title>
+  <style>
+    :root { --navy:#101a2c; --blue:#3b82f6; --pale:#eef4ff; --ink:#202a3b; --muted:#627086; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; color:var(--ink); line-height:1.6; background:#f7f9fc; }
+    header { background:var(--navy); color:white; }
+    nav { max-width:1100px; margin:auto; padding:18px 22px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+    .brand { font-weight:800; font-size:1.15rem; letter-spacing:.2px; }
+    nav a { color:#e3ecff; text-decoration:none; margin-left:18px; font-size:.95rem; }
+    nav a:hover { color:white; text-decoration:underline; }
+    .hero { max-width:1100px; margin:auto; padding:76px 22px 84px; }
+    .hero small { color:#a9c8ff; text-transform:uppercase; letter-spacing:2px; font-weight:700; }
+    h1 { max-width:700px; font-size:clamp(2.3rem,6vw,4.3rem); line-height:1.08; margin:15px 0; }
+    .hero p { max-width:650px; color:#d1daea; font-size:1.12rem; }
+    .button { display:inline-block; margin-top:16px; padding:12px 19px; border-radius:9px; background:var(--blue); color:white; font-weight:700; text-decoration:none; }
+    main { max-width:1100px; margin:auto; padding:55px 22px; }
+    .intro { max-width:720px; margin-bottom:30px; }
+    h2 { font-size:2rem; line-height:1.2; margin:0 0 12px; }
+    .intro p, .part p { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
+    .part { background:white; padding:23px; border:1px solid #e5eaf2; border-radius:14px; box-shadow:0 6px 20px #17294a0a; }
+    .icon { width:48px; height:48px; display:grid; place-items:center; background:var(--pale); border-radius:12px; font-size:1.55rem; margin-bottom:15px; }
+    .part h3 { margin:0 0 6px; font-size:1.2rem; }
+    .tip { margin-top:34px; background:#eaf2ff; border-left:4px solid var(--blue); padding:20px 22px; border-radius:8px; }
+    .tip strong { color:#173b78; }
+    footer { background:var(--navy); color:#c6d0df; text-align:center; padding:25px 18px; font-size:.92rem; }
+    @media(max-width:600px) { nav { align-items:flex-start; flex-direction:column; } nav a { margin:0 14px 0 0; } .hero { padding-top:55px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegação principal">
+      <div class="brand">🖥️ Guia do PC</div>
+      <div><a href="#pecas">Peças</a><a href="#dica">Dica</a></div>
+    </nav>
+    <section class="hero">
+      <small>Conheça seu computador</small>
+      <h1>O que existe dentro de um PC?</h1>
+      <p>Um guia rápido das principais peças do computador — o que cada uma faz e como elas trabalham juntas.</p>
+      <a class="button" href="#pecas">Explorar componentes</a>
+    </section>
+  </header>
+  <main>
+    <section id="pecas">
+      <div class="intro">
+        <h2>Componentes principais</h2>
+        <p>Cada componente tem uma função. O equilíbrio entre eles ajuda a montar um computador adequado para estudar, trabalhar ou jogar.</p>
+      </div>
+      <div class="grid">
+        <article class="part"><div class="icon">🧠</div><h3>Processador (CPU)</h3><p>Executa instruções e cálculos. É um dos componentes que mais influencia a velocidade geral do computador.</p></article>
+        <article class="part"><div class="icon">🎮</div><h3>Placa de vídeo (GPU)</h3><p>Processa imagens e vídeos. É especialmente importante para jogos, edição de vídeo e aplicações 3D.</p></article>
+        <article class="part"><div class="icon">⚡</div><h3>Memória RAM</h3><p>Guarda temporariamente os dados dos programas em uso, permitindo alternar entre tarefas com mais agilidade.</p></article>
+        <article class="part"><div class="icon">💾</div><h3>Armazenamento</h3><p>SSD ou HD guardam o sistema, os programas e seus arquivos. SSDs costumam carregar tudo mais rapidamente.</p></article>
+        <article class="part"><div class="icon">🔌</div><h3>Placa-mãe</h3><p>Conecta os componentes e permite que eles se comuniquem. É essencial verificar compatibilidade antes da compra.</p></article>
+        <article class="part"><div class="icon">🔋</div><h3>Fonte de alimentação</h3><p>Fornece energia aos componentes. Escolha uma fonte de qualidade e com potência adequada ao conjunto.</p></article>
+        <article class="part"><div class="icon">🌬️</div><h3>Refrigeração</h3><p>Ventoinhas e coolers ajudam a controlar a temperatura e manter o computador funcionando de forma estável.</p></article>
+        <article class="part"><div class="icon">🧰</div><h3>Gabinete</h3><p>Acomoda e protege as peças. Também influencia o espaço disponível e a circulação de ar.</p></article>
+      </div>
+      <aside class="tip" id="dica"><strong>Dica:</strong> antes de comprar qualquer peça, confira a compatibilidade com a placa-mãe, o gabinete e a fonte. Compare especificações e priorize componentes de qualidade.</aside>
+    </section>
+  </main>
+  <footer>Guia do PC · Um começo simples para entender hardware.</footer>
+</body>
+</html>
